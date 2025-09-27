@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umida_dasturchi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .demo {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .shadow-text {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .ellipsis {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #999;
+        }
+        .decorated {
+            text-decoration: underline overline line-through;
+        }
+        .capitalized { text-transform: capitalize; }
+        .upper { text-transform: uppercase; }
+        .lower { text-transform: lowercase; }
+        .indented { text-indent: 40px; }
+        .justify { text-align: justify; text-justify: inter-word; }
+    </style>
+</head>
+<body>
+    <h1>H1</h1> 
+    <div class="demo" style="text-align:left">
+        This text is aligned <strong>chap</strong>.
+    </div>
+    <div class="demo" style="text-align:center">This text is aligned <strong>center</strong>.</div>
+    <div class="demo" style="text-align:right">This text is aligned <strong>o'ng</strong>.</div>
+    <div class="demo justify">This text is <strong>justified</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Integer vel.</div>
+    <div class="capitalized demo">Bosh harfli.</div>
+    <div class="demo upper">Katta harfli.</div>
+    <div class="demo lower">BU KATTA HARFLI.</div>
+    <div class="demo indented">Indent inward</div>
+    <div class="shadow-text demo">Buni <strong>soyasi</strong> bor.</div>
+    <div class="demo decorated">This text is <strong>decorated</strong> with underline, overline, and line-through.</div>
+    <div class="demo ellipsis">This is a very long sentence that will not fit and will show an ellipsis at the end...</div>
+    <p><tt>Teletype text</tt></p>
+    <p><cite>Citation</cite></p>
+    <p><em>Emphasized text</em></p>
+    <blockquote>Blockquote example.</blockquote>
+    <p><i>Italic</i></p>
+    <p>H<sub>2</sub>O and E = mc<sup>2</sup></p>
+    <p><del>Deleted text</del> vs <ins>Inserted text</ins></p>
+    <p><code>console.log("Code sample");</code></p>
+    <p><mark>Highlighted text</mark></p>
+    <h2>H2</h2>
+    <pre>Preformatted text</pre>
+    <progress value="70" max="100"></progress>
+    <p><q>Quote, Sitata</q></p>
+    <small>Small-kichkina</small>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <fieldset>
+        <legend>Legenda</legend>
+        <input type="text" placeholder="Yoz!">
+    </fieldset>
+    <picture>
+        <source srcset="./photo_2025-09-21_10-54-54.jpg" type="image/jpg">
+        <img src="https://picsum.photos/id/945/600/400" alt="picsum">
+    </picture>
+</body>
+</html>
