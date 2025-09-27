@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists & Position Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .demo {
+            border: 1px solid #ccc;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9f9f9;
+        }
+
+        /* List Styles */
+        .disc {
+            list-style-type: disc;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        .none {
+            list-style-type: none;
+        }
+
+        .inside {
+            list-style-position: inside;
+        }
+
+        .outside {
+            list-style-position: outside;
+        }
+
+        .custom-img {
+            list-style-image: url("https://via.placeholder.com/15");
+        }
+
+        /* Positioning */
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            left: 20px;
+            top: 10px;
+            background: lightyellow;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background: lightpink;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: lightgreen;
+            padding: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: lightblue;
+            padding: 10px;
+        }
+
+        /* Float */
+        .float-box {
+            width: 120px;
+            height: 80px;
+            margin: 10px;
+            background: peachpuff;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .no-float {
+            float: none;
+        }
+
+        /* Z-Index */
+        .z-container {
+            position: relative;
+            height: 150px;
+            border: 1px dashed #aaa;
+        }
+
+        .z-box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .z1 {
+            background: crimson;
+            left: 20px;
+            top: 20px;
+            z-index: auto;
+        }
+
+        .z2 {
+            background: navy;
+            left: 60px;
+            top: 60px;
+            z-index: 3;
+        }
+
+        .z3 {
+            background: darkgreen;
+            left: 100px;
+            top: 100px;
+            z-index: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lists & Position Playground</h1>
+    <h2>List Styles</h2>
+    <ul class="demo disc">
+        <li>Disc</li>
+        <li>Another</li>
+    </ul>
+
+    <ul class="demo circle">
+        <li>Dumaloq</li>
+        <li>Another</li>
+    </ul>
+
+    <ul class="demo square">
+        <li>4burchak</li>
+        <li>Another</li>
+    </ul>
+
+    <ul class="demo none">
+        <li>No bullets</li>
+        <li>Another</li>
+    </ul>
+
+    <ul class="demo inside">
+        <li>Inside position list</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="demo outside">
+        <li>Outside position list</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="demo custom-img">
+        <li>Custom image bullet</li>
+        <li>Another item</li>
+    </ul>
+    <h2>Positioning</h2>
+    <div class="static demo">This is static (default).</div>
+    <div class="relative demo">This is relative (shifted).</div>
+    <div class="absolute demo">This is absolute (relative to body).</div>
+    <div class="sticky demo">This is sticky (sticks to top on scroll).</div>
+    <div class="fixed demo">This is fixed (bottom right corner).</div>
+    <h2>Float</h2>
+    <div class="demo">
+        <div class="left float-box">Chap</div>
+        <div class="right float-box">O'ng</div>
+        <div class="float-box no-float">Hech biri</div>
+        <div style="clear:both"></div>
+    </div>
+    <h2>Z-Index</h2>
+    <div class="z-container demo">
+        <div class="z-box z1">auto</div>
+        <div class="z-box z2">z=3</div>
+        <div class="z-box z3">none</div>
+    </div>
+</body>
+
+</html>

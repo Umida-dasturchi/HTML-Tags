@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .demo {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .demo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        .none img {
+            clip-path: none;
+        }
+
+        .circle img {
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        .ellipse img {
+            clip-path: ellipse(70% 50% at 50% 50%);
+        }
+
+        .inset img {
+            clip-path: inset(20px 30px 20px 30px);
+        }
+
+        .polygon img {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clip-Path Playground</h1>
+    <div class="demo none">
+        <h3>None</h3>
+        <img src="/photo_2025-09-21_10-54-54.jpg" alt="Example">
+    </div>
+    <div class="demo circle">
+        <h3>Circle</h3>
+        <img src="/photo_2025-09-21_10-54-54.jpg" alt="Example">
+    </div>
+    <div class="demo ellipse">
+        <h3>Ellipse</h3>
+        <img src="/photo_2025-09-21_10-54-54.jpg" alt="Example">
+    </div>
+    <div class="demo inset">
+        <h3>Inset</h3>
+        <img src="/photo_2025-09-21_10-54-54.jpg" alt="Example">
+    </div>
+    <div class="demo polygon">
+        <h3>Polygon</h3>
+        <img src="/photo_2025-09-21_10-54-54.jpg" alt="Example">
+    </div>
+</body>
+
+</html>
