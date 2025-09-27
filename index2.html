@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10">
+    <meta name="description" content="Third HTML Demo Page">
+    <title>Blog Reel Example 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fca7a7;
+            text-align: left;
+            padding: 40px;
+        }
+
+        .inset-box {
+            background: rgb(200, 19, 19);
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            box-shadow: inset 0 0 10px gray;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        console.log("This script runs if JS is enabled.");
+    </script>
+</head>
+
+<body>
+
+    <noscript>
+        <p style="color:red;">⚠️ JavaScript is disabled in your browser.</p>
+    </noscript>
+
+    <div class="inset-box">
+        <!--& Headings -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!--^ Paragraph & text formatting -->
+        <p>
+            This is a <span style="color:#33ff00;">span text</span>.
+            <strong>Strong</strong>, <b>bold</b>, <em>emphasized</em>,
+            <del>deleted</del>, <ins>inserted</ins>.
+        </p>
+
+        <!--~ Lists -->
+        <ul>
+            <li>Tartiblanmagan item 1</li>
+            <li>Unordered item 2</li>
+        </ul>
+
+        <ol>
+            <li>Tartiblangan item 1</li>
+            <li>Ordered item 2</li>
+        </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+
+        <!--TODO Inputs -->
+        <p>
+            Pick a color: <input type="color"><br><br>
+            Upload files: <input type="file" multiple>
+        </p>
+
+        <!--? Video with poster -->
+        <video width="400" controls poster="https://via.placeholder.com/400x200.png?text=Video+Poster">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</body>
+
+</html>
