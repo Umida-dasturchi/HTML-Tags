@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Attributes & Accent-Color Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9fafc;
+            padding: 2rem;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+            color: #555;
+        }
+
+        input,
+        select,
+        textarea,
+        progress {
+            padding: 0.6rem;
+            font-size: 0.9rem;
+            border-radius: 0.4rem;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        /* :placeholder-shown demo */
+        input:placeholder-shown {
+            border-color: tomato;
+        }
+
+        /* :required demo */
+        input:required {
+            border-left: 4px solid crimson;
+        }
+
+        /* accent-color */
+        input[type="checkbox"],
+        input[type="radio"],
+        progress {
+            accent-color: #1ee9a5;
+        }
+
+        .submit-row {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        input[type="submit"] {
+            background: #4a90e2;
+            border: none;
+            color: white;
+            padding: 0.7rem 1.4rem;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        input[type="submit"]:hover {
+            background: #357ab8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Attributes & Accent-Color Playground</h1>
+    <form>
+        <div class="field">
+            <label>File Upload (accept)</label>
+            <input type="file" accept="image/*" capture>
+        </div>
+        
+        <div class="field">
+            <label>Email (autocomplete, required)</label>
+            <input type="email" name="email" autocomplete="on" required placeholder="you@example.com">
+        </div>
+
+        <div class="field">
+            <label>Text (autofocus, minlength, maxlength)</label>
+            <input type="text" name="username" autofocus minlength="3" maxlength="12" placeholder="username">
+        </div>
+
+        <div class="field">
+            <label>Password (pattern, required)</label>
+            <input type="password" name="pwd" pattern=".{6,}" required placeholder="at least 6 chars">
+        </div>
+
+        <div class="field">
+            <label>Number (min, max, step)</label>
+            <input type="number" name="qty" min="1" max="10" step="1" value="5">
+        </div>
+
+        <div class="field">
+            <label>Search (dirname)</label>
+            <input type="search" name="q" dirname="q.dir">
+        </div>
+
+        <div class="field">
+            <label>URL (readonly)</label>
+            <input type="url" name="site" value="https://example.com" readonly>
+        </div>
+
+        <div class="field">
+            <label>Color Picker (disabled)</label>
+            <input type="color" disabled>
+        </div>
+
+        <div class="field">
+            <label>Radio (accent-color)</label>
+            <input type="radio" name="choice" checked> Option A
+        </div>
+
+        <div class="field">
+            <label>Checkbox (accent-color)</label>
+            <input type="checkbox" name="agree" required checked> Agree
+        </div>
+
+        <div class="field">
+            <label>Progress (accent-color)</label>
+            <progress value="60" max="100"></progress>
+        </div>
+
+        <div class="field">
+            <label>Text with size attribute</label>
+            <input type="text" name="short" size="15" placeholder="15 chars wide">
+        </div>
+
+        <div class="field">
+            <label>Image Input</label>
+            <input type="image" src="https://picsum.photos/id/431/600/400" alt="">
+        </div>
+
+        <div class="field">
+            <label>Multiple Select</label>
+            <select multiple name="fruits" size="3">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Cherry</option>
+            </select>
+        </div>
+        <div class="submit-row">
+            <input type="submit" value="Submit Form">
+        </div>
+    </form>
+</body>
+
+</html>

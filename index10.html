@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anchor Tag Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 2rem;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0.8rem 1.2rem;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-size: 0.95rem;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: #35b835;
+        }
+
+        .img-link img {
+            max-width: 120px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .img-link img:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anchor Tag Playground</h1>
+
+    <div class="links">
+        <!--* Basic href -->
+        <a href="https://www.example.com">Visit Example.com</a>
+
+        <!--? Mailto -->
+        <a href="mailto:someone@example.com?subject=Hello&body=How are you?">Send Email</a>
+
+        <!-- Tel -->
+        <a href="tel:+998901234567">Call +998 90 123 45 67</a>
+
+        <!-- Section Jump -->
+        <a href="#about">Go to About Section</a>
+
+        <!-- Image as a Link -->
+        <a href="https://openai.com" class="img-link" target="_blank">
+            <img src="https://picsum.photos/id/1029/600/400" alt="">
+        </a>
+
+        <!-- Download -->
+        <a href="https://via.placeholder.com/600" download="image.png">Download Image</a>
+
+        <!-- Hreflang -->
+        <a href="https://es.wikipedia.org/wiki/HTML" hreflang="es">HTML (Spanish)</a>
+
+        <!-- Target -->
+        <a href="https://developer.mozilla.org" target="_blank">Open MDN in New Tab</a>
+
+        <!-- Type (Resource Link) -->
+        <a href="sample.pdf" type="application/pdf" download>Download PDF</a>
+    </div>
+
+    <!-- Section for jump link -->
+    <section id="about">
+        <h2>About Section</h2>
+        <p>This is the section you jumped to using the <code>href="#about"</code> link.</p>
+    </section>
+</body>
+
+</html>
