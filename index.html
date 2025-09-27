@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Blog Reel HTML">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umida_dasturchi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="lightblue" background="https://www.transparenttextures.com/patterns/wood-pattern.png">
-    <h1 align="center" id="title" class="class">Align,Id, Class</h1>
 
-    <!--* Audio-->
-    <audio controls>
-        <source src="./r_TAmgt7Uuw.mp3" type="audio/mpeg">
-    </audio>
+<body>
 
-    <!--^ Video-->
-    <video width="400" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-        Your browser does not support video.
-    </video>
+    <!--^ Header -->
+    <header>
+        <h1>🌟 H1</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#artikl">Artikl</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-    <!--& Embed-->
-    <embed src="https://www.youtube.com/embed/tgbNymZ7vqY" width="400" height="250">
+    <!--* Main content -->
+    <main>
+        <article id="articles">
+            <header>
+                <h2>H2</h2>
+                <time datetime="2025-09-27">Sentyabr 27, 2025</time>
+            </header>
+            <p>
+                Paragraf <mark>sariq</mark> da.
+            </p>
 
-    <!--! Object-->
-    <object data="https://www.w3.org" width="400" height="200"></object>
+            <!--? Figure with image + caption -->
+            <figure>
+                <img src="https://picsum.photos/id/1025/600/400" alt="kuchuk">
+                <figcaption>O'ranib olgan kuchuk</figcaption>
+            </figure>
+            <br>
+            <hr>
+            <footer>
+                <p>Avtor: Umida</p>
+            </footer>
+        </article>
 
-    <!--? IFrame-->
-    <iframe src="https://www.wikipedia.org" width="400" height="250"></iframe>
+        <!--! Aside section -->
+        <aside>
+            <h3>H3</h3>
+            <details>
+                <summary>Bosing!</summary>
+                <h4>H4</h4>
+            </details>
+        </aside>
+    </main>
 
-    <!--~ Table align & valign-->
-    <table border="1" width="400" align="center" bgcolor="yellow">
-        <tr>
-            <td valign="top">top</td>
-            <td valign="bottom">ost</td>
-            <td>TD</td>
-        </tr>
-    </table>
+    <!--~ Input form -->
+    <section id="contact">
+        <h5>H5</h5>
+        <form>
+            <input type="text" placeholder="Ism:"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="submit" value="Yubor">
+        </form>
+    </section>
+
+    <!--// Footer -->
+    <footer>
+        <h6>&copy; <time datetime="2025">2025</time>
+        Umida_dasturchi</h6>
+    </footer>
 
 </body>
+
 </html>
