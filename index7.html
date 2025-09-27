@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Text & CSS Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* contenteditable */
+        .editable {
+            border: 2px groove #888;
+            padding: 10px;
+            min-height: 50px;
+        }
+
+        /* text-decoration experiments */
+        .wavy {
+            text-decoration: underline wavy pink;
+        }
+
+        .overline-double {
+            text-decoration: overline double;
+        }
+
+        .strike-wavy {
+            text-decoration: line-through wavy tomato;
+        }
+
+        .strike-dashed {
+            text-decoration: line-through dashed chocolate;
+        }
+
+        .underline-overline {
+            text-decoration: underline overline coral;
+        }
+
+        .underline-dotted {
+            text-decoration: underline dotted;
+        }
+
+        .overline-solid {
+            text-decoration: overline solid hotpink;
+        }
+
+        /* font variant */
+        .smallcaps {
+            font-variant: small-caps;
+        }
+
+        /* spacing */
+        .letter-space {
+            letter-spacing: 4px;
+        }
+
+        .word-space {
+            word-spacing: 20px;
+        }
+
+        /* border styles */
+        .groove {
+            border: 4px groove teal;
+            padding: 10px;
+        }
+
+        .ridge {
+            border: 4px ridge purple;
+            padding: 10px;
+        }
+
+        /* ::placeholder */
+        input::placeholder {
+            color: darkred;
+            font-style: italic;
+        }
+
+        /* :where() */
+        :where(h2, h3) {
+            color: darkblue;
+        }
+
+        /* scroll snap */
+        .snap-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            border: 2px solid #aaa;
+        }
+
+        .snap-item {
+            flex: none;
+            scroll-snap-align: start;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background: lightcoral;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
+        }
+
+        /* calc(), min(), clamp() */
+        .calc-box {
+            width: calc(50% - 40px);
+            background: lightgreen;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .min-box {
+            width: min(300px, 80%);
+            background: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .clamp-box {
+            font-size: clamp(1rem, 2vw, 2rem);
+            background: lightgoldenrodyellow;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Advanced CSS Playground</h1>
+    <h2>Editable Text</h2>
+    <div class="editable" contenteditable="true">You can edit this text!</div>
+    <h2>Text Decoration</h2>
+    <p class="wavy">Underline wavy pink</p>
+    <p class="overline-double">Overline double</p>
+    <p class="strike-wavy">Line-through wavy tomato</p>
+    <p class="strike-dashed">Line-through dashed chocolate</p>
+    <p class="underline-overline">Underline + Overline coral</p>
+    <p class="underline-dotted">Underline dotted</p>
+    <p class="overline-solid">Overline solid Issiq pushti</p>
+
+    <h2>Font Variant & Spacing</h2>
+    <p class="smallcaps">this is small caps text</p>
+    <p class="letter-space">Letter spacing example</p>
+    <p class="word-space">Word spacing example</p>
+    <h2>Border Styles</h2>
+    <div class="groove">Groove border</div><br>
+    <div class="ridge">Ridge border</div>
+    <h2>Placeholder Example</h2>
+    <input type="text" placeholder="Yozing!...">
+    <h2>Scroll Snap</h2>
+    <div class="snap-container">
+        <div class="snap-item">1</div>
+        <div class="snap-item">2</div>
+        <div class="snap-item">3</div>
+        <div class="snap-item">4</div>
+    </div>
+    <h2>calc(), min(), clamp()</h2>
+    <div class="calc-box">Width: calc(50% - 40px)</div>
+    <div class="min-box">Width: min(300px, 80%)</div>
+    <div class="clamp-box">Font size: clamp(1rem, 2vw, 2rem)</div>
+</body>
+
+</html>
